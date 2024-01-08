@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image:url(/pxfuel.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    animation: bgChange 20s ease-in-out infinite;
+}
+
+@keyframes bgChange{
+    0%,100%{
+        background-image: url(pxfuel.jpg);
+    }
+    20%{
+        background-image: url(21.jpg);
+    }
+    40%{
+        background-image: url(3.jpg);
+    }
+    60%{
+        background-image: url(41.jpg);
+    }
+    80%{
+        background-image: url(5.jpg);
+    }
+}
+.datetime{
+    /* width: 550px;
+    height: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%); */
+
+    color: #fff;
+    background: rgba(235, 0, 255, 0.11);
+    font-family: 'Poppins',sans-serif;
+    width: 550px;
+    height: 140px;
+    padding: 15px 15px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+}
+
+.date{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+
+.time span{
+    font-size: 55px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time span:last-child{
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* .clock{
+    width: 100%;
+    height: 100%;
+    background: rgba(235, 0, 255, 0.11);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+.clock span{
+    font-size: 60px;
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.clock span::after{
+    content: '';
+    font-size: 12px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#hrs::after{
+    content: 'HOURS';
+}
+#min::after{
+    content: 'MINS';
+}
+#secs::after{
+    content: 'SEC';
+} */
